@@ -16,7 +16,7 @@ public class Serie {
 	private int idSerie;
 	
 	@Column(name = "nombre")
-	private String nomCiudad;
+	private String nomSerie;
 	
 	@Column(name = "temporadas")
 	private int temporadas;
@@ -27,9 +27,9 @@ public class Serie {
 		super();
 	}
 	
-	public Serie(String nomCiudad, int temporadas,int capitulos) {
+	public Serie(String nomSerie, int temporadas,int capitulos) {
 		super();
-		this.nomCiudad = nomCiudad;
+		this.nomSerie = nomSerie;
 		this.temporadas = temporadas;
 		this.capitulos = capitulos;
 	}
@@ -42,12 +42,12 @@ public class Serie {
 		this.idSerie = idSerie;
 	}
 
-	public String getNomCiudad() {
-		return nomCiudad;
+	public String getNomSerie() {
+		return nomSerie;
 	}
 
-	public void setNomCiudad(String nomCiudad) {
-		this.nomCiudad = nomCiudad;
+	public void setNomSerie(String nomSerie) {
+		this.nomSerie = nomSerie;
 	}
 
 	public int getTemporadas() {

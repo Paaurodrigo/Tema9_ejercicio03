@@ -72,7 +72,7 @@ public class SerieDAO {
 		List<Serie> series = null;
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 			transaction = session.beginTransaction();
-			series = session.createQuery("FROM Ciudad", Serie.class).getResultList();
+			series = session.createQuery("FROM Serie", Serie.class).getResultList();
 			transaction.commit();
 		} catch (Exception e) {
 			if (transaction != null) {
